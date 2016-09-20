@@ -15,6 +15,14 @@
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -36,6 +44,12 @@
             "PACKAGE_NAME": "com.rapifila.launch"
         },
         "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.rapifila.launch"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.rapifila.launch"
+        },
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.rapifila.launch"
         }
     },
@@ -69,10 +83,27 @@
             "clobbers": [
                 "Connection"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-dialogs": "1.2.1",
-        "cordova-plugin-network-information": "1.2.1"
+        "cordova-plugin-network-information": "1.2.1",
+        "cordova-plugin-inappbrowser": "1.5.0",
+        "cordova-plugin-device": "1.1.3"
     }
 }
