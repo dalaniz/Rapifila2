@@ -33,11 +33,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        //app.receivedEvent('deviceready');
 		if (navigator.connection.type == Connection.NONE) {
 		  navigator.notification.alert('Para continuar se requiere una conexion a internet');
 		} else {
-		  window.location="http://181.30.48.75/pnps/fila/mobile";
+			console.log("Ejecutando: InAppBrowser.open");
+			var ref = cordova.InAppBrowser.open('http://181.30.48.75/pnps/fila/mobile', '_blank', 'location=no');
+		  //window.location="http://181.30.48.75/pnps/fila/mobile";
 		}
     },
     // Update DOM on a Received Event
