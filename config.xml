@@ -5,7 +5,7 @@
     <author email="support@rapifila.com" href="http://www.rapifila.com">RapiFila Team</author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-minSdkVersion" value="15" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.5.0" />
