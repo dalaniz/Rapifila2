@@ -38,7 +38,7 @@ var app = {
 		  navigator.notification.alert('Para continuar se requiere una conexion a internet');
 		} else {
 			console.log("Ejecutando: InAppBrowser.open");
-			var ref = cordova.InAppBrowser.open('http://181.30.48.75/pnps/fila/mobile', '_blank', 'location=no');
+			var ref = cordova.InAppBrowser.open('http://181.30.48.75/pnps/fila/mobile', '_system', 'location=no');
 		  //window.location="http://181.30.48.75/pnps/fila/mobile";
 		}
     },
