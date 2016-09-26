@@ -39,7 +39,7 @@ var app = {
 		} else {
 			console.log("Ejecutando: InAppBrowser.open");
 			alert("entreee");
-			var ref = cordova.InAppBrowser.open('http://181.30.48.75/pnps/fila/mobile', '_system', 'location=no');
+			var ref = cordova.InAppBrowser.open('http://181.30.48.75/pnps/fila/mobile', '_blank', 'location=no');
 			alert("saliiii");
 		}
     },
